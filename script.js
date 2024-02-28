@@ -61,4 +61,8 @@ let getmovie = () => {
   }
 };
 searchButton.addEventListener("click", getmovie);
-window.addEventListener("load", getmovie);
+inputMovie.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    getmovie();
+  }
+});
