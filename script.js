@@ -64,5 +64,6 @@ searchButton.addEventListener("click", getmovie);
 inputMovie.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
     getmovie();
+    event.target.blur();
   }
 });
